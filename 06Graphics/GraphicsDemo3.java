@@ -23,7 +23,7 @@ public class GraphicsDemo3 extends Canvas
         g.setFont(new Font("Consolas", Font.PLAIN, 36)); // 36-pt plain
         g.drawString("Yes, they are.", 400, 200);
 
-        g.setFont(new Font("Courier New", Font.ITALIC, 12));
+        g.setFont(new Font("Wingdings", Font.ITALIC, 12));
 
         g.setColor(Color.white);
         //g.setFont(new Font("Arial", Font.BOLD+Font.ITALIC, 60)); // 60-pt italic bold
@@ -54,3 +54,8 @@ public class GraphicsDemo3 extends Canvas
         win.setVisible(true);
     }
 }
+//First two mean x-coordinate, y-coordinate of first point, last two mean x-coordinate, y-coordinate of second point.
+//the upper-left corner
+//the lower-left corner
+//It will be default Arial 
+//It will rectangles instead letters

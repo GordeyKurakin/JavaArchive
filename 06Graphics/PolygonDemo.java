@@ -28,9 +28,9 @@ public class PolygonDemo extends Canvas
         g.fillPolygon(pent);
 		
 		Polygon trap = new Polygon();
-        trap.addPoint(550, 200);
-        trap.addPoint(600, 250);
-        trap.addPoint(575, 350);
+        trap.addPoint(550, 250);
+        trap.addPoint(575, 250);
+        trap.addPoint(600, 350);
         trap.addPoint(525, 350);
 
         

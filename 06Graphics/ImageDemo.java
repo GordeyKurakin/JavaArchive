@@ -23,7 +23,7 @@ public class ImageDemo extends Canvas
 		g.drawImage(coolFace,100,100,this);
 		g.setColor( Color.white );
 		g.setFont(new Font("Times New Roman", Font.PLAIN, 65));
-		g.drawString("When you came for Gallifreyan's soul.", 50, 484);
+		g.drawString("When you came for Gallifreyan's soul", 50, 484);
 		
 		// And, just for fun, let's give me a halo! This halo designed by Liz O in 2012.
 		g.setColor( Color.yellow );
