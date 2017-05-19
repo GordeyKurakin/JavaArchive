@@ -10,7 +10,7 @@ public class MotivationalPoster extends Canvas
 	
 	public MotivationalPoster() throws Exception
 	{
-		motivationalFace = ImageIO.read( new File("Tepes.jpg") );
+		motivationalFace = ImageIO.read( new File("TepesI.jpg") );
 		// Java supports PNG, JPEG, and GIF (but not animated GIFs). It does not support BMP.
 	}
 	
@@ -18,15 +18,15 @@ public class MotivationalPoster extends Canvas
 	{
 		g.setColor( Color.black );
 		g.fillRect(0, 0 , 1024, 768);
-		g.drawImage(motivationalFace,100,100,this);
+		g.drawImage(motivationalFace,350,0,this);
 		g.setColor( Color.red );
 		g.setFont(new Font("Times New Roman", Font.PLAIN, 105));
-		g.drawString("V", 35, 510);
+		g.drawString("V", 285, 510);
 		g.setFont(new Font("Times New Roman", Font.PLAIN, 65));
-		g.drawString("LAD III TEPE", 115, 484);
-		g.drawLine(115, 494, 485, 494);
+		g.drawString("LAD III TEPE", 365, 484);
+		g.drawLine(365, 494, 735, 494);
 		g.setFont(new Font("Times New Roman", Font.PLAIN, 105));
-		g.drawString("S", 485, 510);
+		g.drawString("S", 735, 510);
 		g.setColor( Color.white );
 		g.setFont(new Font("Century Gothic", Font.PLAIN, 25));
 		g.drawString("Alone protected his country from one of the biggest and strongest empires at that time.", 35, 545);
