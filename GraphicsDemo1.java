@@ -37,4 +37,5 @@ public class GraphicsDemo1 extends Canvas
 //Same as second.
 //Coordinats of start.
 //Last object drawn on top, first on down.
-//
+
+//Test comment to commit
