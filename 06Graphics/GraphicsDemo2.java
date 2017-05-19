@@ -7,15 +7,38 @@ public class GraphicsDemo2 extends Canvas
     {
         g.setColor(Color.black);
 
+        g.drawRect(50,20,100,200);  // draw a rectangle
+        g.drawOval(160,20,100,200); // draw a filled-in oval
 
-        g.setColor(Color.red);
-        g.fillArc(50,50,400,400,45,270); // chomp
+        //arcs
+        g.drawArc(270,20,100,200,0,270); // draw an arc that starts at 0 degrees
+                                         //   and has an arclength of 270 degrees
+        g.drawArc(50,250,150,150,90,180);
+        g.drawArc(210,250,150,150,45,90);
+        g.fillArc(210,280,150,150,45,90);
+
+        g.setColor(Color.yellow);
+        g.fillArc(150,400,150,150,45,270); // chomp
         g.setColor(Color.pink);
-        g.fillArc(400,150,200,200,225,270);
+        g.fillArc(260,400,50,50,225,270);
+
         
         // custom colors
         Color myOrange = new Color(230,92,0); // amount of red, green, blue in the color
                                               // Each component has a value from 0-255
+        g.setColor(myOrange);
+        g.fillOval(500,50,150,150);
+
+        Color myGrey = new Color(238,238,238);
+        g.setColor(myGrey);
+        g.fillOval(550,100,50,50);
+
+        Color myColor = new Color(102,51,255);
+        g.setColor(myColor);
+        g.fillOval(500,210,150,150);
+
+        g.setColor(Color.green);
+        g.fillOval(500,370,150,150);    
     }
 
     public static void main( String[] args )
@@ -28,3 +51,10 @@ public class GraphicsDemo2 extends Canvas
         win.setVisible(true);
     }
 }
+        /*Color myColor = new Color(102,51,255);
+        g.setColor(myColor);
+        g.fillArc(50,50,400,400,45,270); // chomp
+        g.setColor(Color.pink);
+        g.fillArc(400,150,200,200,225,270);*/
+        
+ 
