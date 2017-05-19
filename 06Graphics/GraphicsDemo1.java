@@ -33,8 +33,8 @@ public class GraphicsDemo1 extends Canvas
     }
 }
 //800/600
-//First two mean start coordinates, last two means size.
-//Same as second.
+//First two mean x-coordinate, y-coordinate, last two means width and height.
+//First two mean x-coordinate, y-coordinate, last two means width and height.
 //Coordinats of start.
 //Last object drawn on top, first on down.
 
