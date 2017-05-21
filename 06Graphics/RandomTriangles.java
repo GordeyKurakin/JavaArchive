@@ -8,15 +8,15 @@ public class RandomTriangles extends Canvas
     public void paint( Graphics g )
     {
         Random r = new Random();
-        int x = 1 + r.nextInt(1024);
-        int y = 1 + r.nextInt(768);
-        int red = 1 + r.nextInt(255);
-        int green = 1 + r.nextInt(255);
-        int blue = 1 + r.nextInt(255);
+        int x, y, red, green, blue;
 
-        Color mycolor = new Color(red,green,blue);
+        Color mycolor;
         for(int i = 0; i < 500; i++){
-        	g.setColor(mycolor);
+        	red = 1 + r.nextInt(255);
+            green = 1 + r.nextInt(255);
+            blue = 1 + r.nextInt(255);
+            mycolor = new Color(red,green,blue);
+            g.setColor(mycolor);
 	        Polygon tri = new Polygon();
 	        x = 1 + r.nextInt(1024);
             y = 1 + r.nextInt(768);
@@ -28,10 +28,6 @@ public class RandomTriangles extends Canvas
             y = 1 + r.nextInt(768);
 	        tri.addPoint(x, y);
 	        g.fillPolygon(tri);
-	        red = 1 + r.nextInt(255);
-	        green = 1 + r.nextInt(255);
-	        blue = 1 + r.nextInt(255);
-	        mycolor = new Color(red,green,blue);
         }
     }
     public static void main(String[] args)
