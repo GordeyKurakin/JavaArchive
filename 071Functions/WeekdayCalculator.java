@@ -37,6 +37,7 @@ public class WeekdayCalculator
 		String date = "";
 
 		// bunch of calculations go here
+		
 		yy=yyyy - 1900;
 		total = Math.floor(yy/4) + yy + mm + month_offset(mm);
 		if(is_leap(yyyy)){
