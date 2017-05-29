@@ -10,12 +10,6 @@ public class FlickerPhrase
 		for ( int i=0; i<100000; i++ )
 		{
 			r = 1 + rng.nextInt(5);
-			// Write five if statements here.
-			// If r is 1, then call the function named 'first'.
-			// If r is 2, then call the function named 'second', and so on.
-			
-
-			// Optional: after the if statements are over, add in a slight delay.
 			if(r == 1){
 				first();
 			}
