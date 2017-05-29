@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+//Mistakes:
+//Do not repeat yourself! If your program needs to output some text, it should be written just once. 
+//You just need to think in what order to put your blocks of code.
+
 public class AreaCalculator
 {
 	public static void main( String[] args )
