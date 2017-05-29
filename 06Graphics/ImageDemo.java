@@ -39,6 +39,4 @@ public class ImageDemo extends Canvas
 		win.add( new ImageDemo() );
 		win.setVisible(true);
 	}
-
-
 }

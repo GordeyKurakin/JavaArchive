@@ -38,6 +38,11 @@ public class Sierpinski extends Canvas
             }
             x = x - dx/2;
             y = y - dy/2;
+            try {
+                Thread.sleep(1);                 //1000 milliseconds is one second.
+            } catch(InterruptedException ex) {
+                Thread.currentThread().interrupt();
+            }
         }
         g.drawString("Sierpinski Triangle", 462, 484);
     }
