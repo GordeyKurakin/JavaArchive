@@ -12,13 +12,13 @@ public class MoreFillInFunctions
 		System.out.println();
 		System.out.println("Some random numbers, if you please: ");
 		// MISTAKE: This is incorrect, you must use lo and hi variables on the place and according to the instruction below
-		int lo, hi, val1 = superrand(1, 10), val2 = superrand(1, 10);
+		int lo, hi, val1 = 999, val2 = 999;
 		lo = 1;
 		hi = 10;
-		//superrand();
-		System.out.println("First: " + val1 );
-		// superrand();  // this time, put hi first
-		System.out.println("Second: " + val2 );
+		val1 = superrand(lo, hi);
+		System.out.println("First: " + val1);
+		val2 = superrand(hi, lo);  // this time, put hi first
+		System.out.println("Second: " + val2);
 		if ( val1 == val2 )
 			System.out.println("Hey!  They were the same!");
 		else
