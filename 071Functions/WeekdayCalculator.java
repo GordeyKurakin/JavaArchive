@@ -43,7 +43,12 @@ public class WeekdayCalculator
 			yy4 = yy4 - 1;
 		}
 		
+<<<<<<< HEAD
 		total = yy4 + (yy*365) + dd + month_offset(mm);
+=======
+		total = yy4 + yy + dd + month_offset(mm);
+		
+>>>>>>> ca98f232d7f3dbb896827e5ff89cbf8efe93aa00
 		if(is_leap(yyyy)){
 			if(mm == 1 || mm == 2){
 				total = total - 1;

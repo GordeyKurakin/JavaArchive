@@ -11,6 +11,7 @@ public class MoreFillInFunctions
 
 		System.out.println();
 		System.out.println("Some random numbers, if you please: ");
+		// MISTAKE: This is incorrect, you must use lo and hi variables on the place and according to the instruction below
 		int lo, hi, val1 = superrand(1, 10), val2 = superrand(1, 10);
 		lo = 1;
 		hi = 10;
