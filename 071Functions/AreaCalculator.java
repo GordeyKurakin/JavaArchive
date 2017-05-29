@@ -12,18 +12,20 @@ public class AreaCalculator
 
 		System.out.println("Shape Area Calculator version 0.1 (c) 2005 Mitchell Sample Output, Inc.");
 		System.out.println();
-		System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
-		System.out.println();
-		System.out.println("Some automatic tests....");
-		System.out.println("1) Triangle");
-		System.out.println("2) Rectangle");
-		System.out.println("3) Square");
-		System.out.println("4) Circle");
-		System.out.println("5) Quit");
-		System.out.print("Which shape: ");
-		int choice = keyboard.nextInt();
-		System.out.println();
+		int choice = 0;
 		while(choice != 5){
+			System.out.println();
+			System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+			System.out.println();
+			System.out.println("Some automatic tests....");
+			System.out.println("1) Triangle");
+			System.out.println("2) Rectangle");
+			System.out.println("3) Square");
+			System.out.println("4) Circle");
+			System.out.println("5) Quit");
+			System.out.print("Which shape: ");
+			choice = keyboard.nextInt();
+			System.out.println();
 			if(choice == 1){
 				System.out.print("Base: ");
 				int base = keyboard.nextInt();
@@ -31,17 +33,6 @@ public class AreaCalculator
 				int height = keyboard.nextInt();
 				System.out.println();
 				System.out.println("The area is " + area_triangle(base, height) + ".");
-				System.out.println();
-				System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
-				System.out.println();
-				System.out.println("1) Triangle");
-				System.out.println("2) Rectangle");
-				System.out.println("3) Square");
-				System.out.println("4) Circle");
-				System.out.println("5) Quit");
-				System.out.print("Which shape: ");
-				choice = keyboard.nextInt();
-				System.out.println();
 			}
 			if(choice == 2){
 				System.out.print("Length: ");
@@ -50,49 +41,16 @@ public class AreaCalculator
 				int width = keyboard.nextInt();
 				System.out.println();
 				System.out.println("The area is " + area_rectangle(length, width) + ".");
-				System.out.println();
-				System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
-				System.out.println();
-				System.out.println("1) Triangle");
-				System.out.println("2) Rectangle");
-				System.out.println("3) Square");
-				System.out.println("4) Circle");
-				System.out.println("5) Quit");
-				System.out.print("Which shape: ");
-				choice = keyboard.nextInt();
-				System.out.println();
 			}
 			if(choice == 3){
 				System.out.print("Side length: ");
 				int side = keyboard.nextInt();
 				System.out.println("The area is " + area_square(side) + ".");
-				System.out.println();
-				System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
-				System.out.println();
-				System.out.println("1) Triangle");
-				System.out.println("2) Rectangle");
-				System.out.println("3) Square");
-				System.out.println("4) Circle");
-				System.out.println("5) Quit");
-				System.out.print("Which shape: ");
-				choice = keyboard.nextInt();
-				System.out.println();
 			}
 			if(choice == 4){
 				System.out.print("Raius: ");
 				int radius = keyboard.nextInt();
 				System.out.println("The area is " + area_circle(radius) + ".");
-				System.out.println();
-				System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
-				System.out.println();
-				System.out.println("1) Triangle");
-				System.out.println("2) Rectangle");
-				System.out.println("3) Square");
-				System.out.println("4) Circle");
-				System.out.println("5) Quit");
-				System.out.print("Which shape: ");
-				choice = keyboard.nextInt();
-				System.out.println();
 			}
 		}
 
