@@ -37,6 +37,7 @@ public class AreaCalculator
 				System.out.println("5) Quit");
 				System.out.print("Which shape: ");
 				choice = keyboard.nextInt();
+				System.out.println();
 			}
 			if(choice == 2){
 				System.out.print("Length: ");
@@ -55,9 +56,10 @@ public class AreaCalculator
 				System.out.println("5) Quit");
 				System.out.print("Which shape: ");
 				choice = keyboard.nextInt();
+				System.out.println();
 			}
 			if(choice == 3){
-				System.out.print("Side: ");
+				System.out.print("Side length: ");
 				int side = keyboard.nextInt();
 				System.out.println("The area is " + area_square(side) + ".");
 				System.out.println();
@@ -70,6 +72,7 @@ public class AreaCalculator
 				System.out.println("5) Quit");
 				System.out.print("Which shape: ");
 				choice = keyboard.nextInt();
+				System.out.println();
 			}
 			if(choice == 4){
 				System.out.print("Raius: ");
@@ -85,6 +88,7 @@ public class AreaCalculator
 				System.out.println("5) Quit");
 				System.out.print("Which shape: ");
 				choice = keyboard.nextInt();
+				System.out.println();
 			}
 		}
 
@@ -103,9 +107,10 @@ public class AreaCalculator
 		int area = length * width;
 		return area;
 	}
-	public static double area_square( int side )
+	public static int area_square( int side )
 	{
-		double area = Math.pow(side, 2);;
+		//int area = Math.pow(side, 2);
+		int area = side * side;
 		return area;
 	}
 	public static double area_triangle( int base, int height )
