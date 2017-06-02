@@ -44,7 +44,8 @@ public class WeekdayCalculator
 		}
 		
 //<<<<<<< HEAD
-		total = yy4 + (yy*365) + dd + month_offset(mm);
+		total = (yy4/4) + yy + dd + month_offset(mm);
+		System.out.print(total + ", " + month_offset(mm) + ", " + yy4);
 //=======
 		//total = yy4 + yy + dd + month_offset(mm);
 		
@@ -65,25 +66,25 @@ public class WeekdayCalculator
 	public static String weekday_name( int day )
 	{
 		String result = "";
-		if(day % 7 == 0){
+		if(day % 7 == 2){
 			result = "Monday";
 		}
-		else if(day % 7 == 1){
+		else if(day % 7 == 3){
 			result = "Tuesday";
 		}
-		else if(day % 7 == 2){
+		else if(day % 7 == 4){
 			result = "Wednesday";
 		}
-		else if(day % 7 == 3){
+		else if(day % 7 == 5){
 			result = "Thursday";
 		}
-		else if(day % 7 == 4){
+		else if(day % 7 == 6){
 			result = "Friday";
 		}
-		else if(day % 7 == 5){
+		else if(day % 7 == 0){
 			result = "Saturday";
 		}
-		else if(day % 7 == 6){
+		else if(day % 7 == 1){
 			result = "Sunday";
 		}
 
