@@ -33,23 +33,19 @@ public class WeekdayCalculator
 
 	public static String weekday( int mm, int dd, int yyyy )
 	{
-		int yy, yy4, total;
+		int yy, total, iyy4;
 		String date = "";
+		Double yy4;
 
 		// bunch of calculations go here
-		yy=yyyy - 1900;
-		yy4 = yy;
-		while(yy4 % 4 != 0){
+		yy = yyyy - 1900;
+		yy4 = Math.floor(yy/4);
+		iyy4 = yy4.intValue();
+		/*while(yy4 % 4 != 0){
 			yy4 = yy4 - 1;
-		}
-		
-//<<<<<<< HEAD
-		total = (yy4/4) + yy + dd + month_offset(mm);
-		System.out.print(total + ", " + month_offset(mm) + ", " + yy4);
-//=======
-		//total = yy4 + yy + dd + month_offset(mm);
-		
-//>>>>>>> ca98f232d7f3dbb896827e5ff89cbf8efe93aa00
+		}*/
+
+		total = iyy4 + yy + dd + month_offset(mm);
 		if(is_leap(yyyy)){
 			if(mm == 1 || mm == 2){
 				total = total - 1;
