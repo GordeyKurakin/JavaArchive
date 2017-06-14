@@ -2,7 +2,7 @@ public class FindingPrimeNumbers
 {
 	public static void main( String[] args )
 	{
-		for(int y = 2; y <= 100; y++){
+		for(int y = 2; y <= 1000; y++){
 			if(isPrime(y)){
 				System.out.println(y);
 			}

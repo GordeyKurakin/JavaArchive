@@ -24,10 +24,6 @@ public class Keychains3
 			System.out.println("4. Checkout");
 			System.out.print("Please enter your choice: ");
 			choice = keyboard.nextInt();
-			while(choice != 1 && choice != 2 && choice != 3 && choice != 4){
-				System.out.println("You have no that choice. Try again: ");
-				choice = keyboard.nextInt();
-			}
 
 			System.out.println();
 			if(choice == 1){
@@ -43,6 +39,9 @@ public class Keychains3
 			else if(choice == 3){
 				view_order(numkey, price, tax, base_shipping, per_keychain_shipping);
 				System.out.println();
+			}
+			else {
+				System.out.println("You enterd a wrong option.");
 			}
 		}
 
@@ -71,12 +70,8 @@ public class Keychains3
 		int choiceremove;
 		System.out.print("You have " + numkey + " keychains. How many to remove? ");
 		choiceremove = keyboard.nextInt();
-		while(choiceremove < 0){
-			System.out.print("You can't remove least than 0. Try again: ");
-			choiceremove = keyboard.nextInt();
-		}
-		while(choiceremove > numkey){
-			System.out.print("You can't remove more than price of all keychains. Try again: ");
+		while(choiceremove < 0 || choiceremove > numkey){
+			System.out.print("You can't do that. Try again: ");
 			choiceremove = keyboard.nextInt();
 		}
 		numkey = numkey - choiceremove;
@@ -98,12 +93,7 @@ public class Keychains3
 		System.out.println("CHECKOUT");
 		System.out.println("What is your name? ");
 		choicen = keyboard.nextLine();
-		System.out.println("You have " + num_keychains + " keychains.");
-		System.out.println("Keychains cost $10 each.");
-		System.out.println("Base shipping cost $5.");
-		System.out.println("Price per keychain shipping cost $1.");
-		System.out.println("Total cost is " + String.valueOf(num_keychains * price_per_keychain + num_keychains*per_keychain_shipping + base_shipping) + "$. Without tax.");
-		System.out.println("Total cost is " + String.valueOf(num_keychains * price_per_keychain + num_keychains*per_keychain_shipping + base_shipping + (num_keychains * price_per_keychain + num_keychains*per_keychain_shipping + base_shipping) * tax) + "$.");
+		view_order(num_keychains, price_per_keychain, tax , base_shipping, per_keychain_shipping);
 		System.out.println("Thanks for your order, " + choicen + "!");
 	}
 }
