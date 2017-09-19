@@ -1,22 +1,25 @@
 import java.io.File;
 import java.util.Scanner;
-public class SummingSeveralNumbersFromAnyFile {
-	public static void main(String[] args) throws Exception  {
+
+public class SummingSeveralNumbersFromAnyFile
+{
+	public static void main( String[] args ) throws Exception
+	{
 		Scanner keyboard = new Scanner(System.in);
 		String file;
-
-
-		System.out.print("Which file would you like to read numbers from: ");
-		file = keyboard.nextLine();
-		System.out.println("Reading numbers from file '" + file + "'\n");
-	    Scanner filein = new Scanner(new File(file));
-	    int a = filein.nextInt();
-	    int b = filein.nextInt();
-	    int c = filein.nextInt();
-
-	    int sum = a + b + c;
-	    System.out.println(a + " + " + b + " + " + c + " = " + sum);
-	    filein.close();
-
+		int num, total = 0;
+		System.out.print( "Which file would you like to read numbers from: " );
+		file = keyboard.next();
+		File filed = new File(file);
+		Scanner readfile = new Scanner(filed);
+		System.out.println( "Reading numbers from '" + file + "'\n" );
+		while ( readfile.hasNext() )
+		{
+			num = readfile.nextInt();
+			total += num;
+			System.out.print( num + " " );
+		}
+		readfile.close();
+		System.out.println( "\nTotal is " + total );
 	}
 }
