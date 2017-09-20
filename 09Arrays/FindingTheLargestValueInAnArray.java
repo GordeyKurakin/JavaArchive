@@ -13,7 +13,7 @@ public class FindingTheLargestValueInAnArray
     	Random r = new Random();
     	int red;
     	for(int i = 0; i < array.length; i++ ){
-    		red = 1+r.nextInt(50);
+    		red = 1+r.nextInt(100);
     		array[i] = red;
     	}
         System.out.print("Array: ");

@@ -7,7 +7,7 @@ public class WhereIsIt
     {
     	Scanner keyboard = new Scanner(System.in);
         int[] array;
-        int a;
+        int a, b = 0;
     	array = new int[10];
     	Random r = new Random();
     	int red;
@@ -26,7 +26,11 @@ public class WhereIsIt
         for(int i = 0; i < array.length; i++){
             if(a == array[i]){
                 System.out.println(a + " is in slot " + i + ".");
+                b += 1;
             }
+        }
+        if(b == 0 ){
+            System.out.println(a + " is not in the array.");
         }
     }
 }
