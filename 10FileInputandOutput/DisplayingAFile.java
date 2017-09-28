@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class DisplayingAFile {
 
-  public static void main(String[] args)  throws Exception{
+  public static void main(String[] args) throws Exception{
     Scanner keyboard = new Scanner(System.in);
     String fil, line;
     System.out.print("Open which file: ");
