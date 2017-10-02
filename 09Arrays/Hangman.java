@@ -59,16 +59,6 @@ public class Hangman
 				solved = true;
 			}
 		}
-		System.out.println( "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n" );
-		System.out.println( "You have " + (5 - misss) + " tries." );
-		System.out.print( "Word:\t" );
-		for ( int i = 0; i < rword.length(); i++ ) {
-			System.out.print( lines[i] + " " );
-		}
-		System.out.print("\nMisses: ");
-		for ( int i = 0; i < missed.length; i++ ) {
-			System.out.print( missed[i] );
-		}
 		if (solved){
 			System.out.println( "\nYou did it!" );
 		}
