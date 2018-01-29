@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-class Student
+/*class Student
 {
 	String name;
  	int grade;
  	double avg;
-}
+}*/
 
 public class LilDatabase
 {
