@@ -39,12 +39,9 @@ public class PokeSwap
 			System.out.println( "\n" + pokeParty[0] + " swaps out with " + pokeParty[3] + "!\n" );
 
 			// add code here to swap Pikachu (slot 0) with Gyarados (slot 3)
+			swap = pokeParty[0];
 			pokeParty[0] = pokeParty[3];
 			pokeParty[3] = swap;
-
-			for(int i = 0; i<pokeParty.length; i++) {
-				System.out.println(pokeParty[i]);
-			}
 
 			System.out.println( pokeParty[0] + " used BITE!  It's super effective." );
 
