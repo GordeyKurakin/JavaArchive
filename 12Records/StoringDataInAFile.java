@@ -20,7 +20,7 @@ public class StoringDataInAFile
 		{
 			autos[i] = new Car();
 			System.out.println( "Car " + (i + 1) );
-			System.out.print( "\tCompany: " );
+			System.out.print( "\tMake: " );
 			autos[i].company = keyboard.next();
 			System.out.print( "\tModel: " );
 			autos[i].model = keyboard.next();
@@ -32,14 +32,12 @@ public class StoringDataInAFile
 		System.out.print( "To which file do you want to save this information? " );
 		String usrFile = keyboard.next();
 		PrintWriter fileOut = new PrintWriter( new FileWriter(usrFile) );
-		
 		for ( int i = 0; i < autos.length; i++ )
 		{
-			fileOut.println( "Car " + (i + 1) );
-			fileOut.println( autos[i].company );
-			fileOut.println( autos[i].model );
-			fileOut.println( autos[i].year );
-			fileOut.println( autos[i].license );
+			fileOut.print( autos[i].company + " ");
+			fileOut.print( autos[i].model + " " );
+			fileOut.print( autos[i].year + " " );
+			fileOut.print( autos[i].license + "\n" );
 		}
 		fileOut.close();
 		System.out.println( "Data saved." );
